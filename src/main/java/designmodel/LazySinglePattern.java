@@ -12,6 +12,10 @@ public class LazySinglePattern {
         System.out.println("我又被初始化了");
     }
 
+//    static {
+//        System.out.println("static block code init");
+//    }
+
     // 声明我们需要的单例实例化对象，这里需要留意 volatile 关键字哟！！！
     private static volatile LazySinglePattern instance;
 
